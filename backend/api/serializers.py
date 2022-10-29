@@ -10,4 +10,4 @@ class EmployeeSerializer(serializers.HyperlinkedModelSerializer):
     # specify model and fields
     class Meta:
         model = EmployeeModel
-        fields = ('name', 'department', 'salary')
+        fields = ('id', 'name', 'department', 'salary')
