@@ -10,10 +10,10 @@ from .views import *
 router = routers.DefaultRouter()
 
 # define the router path and viewset to be used
-router.register(r'employees', EmployeeViewSet)
+# router.register(r'employees', EmployeeViewSet)
 
 # specify URL Path for rest_framework
 urlpatterns = [
-    path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls'))
+    # path('save/', save_data),
+    path('employees/', EmployeeViewSet.as_view())
 ]
